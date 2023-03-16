@@ -1,0 +1,18 @@
+<html>
+<header>
+<title>about</title>
+</header>
+<body>
+<h1>{{ title }}</h1>
+<p>Addition:{{ massage }}</p>
+<p>Substraction:{{ sum }}</p>
+<p>Multplication:{{ mul }}</p>
+
+  <form method="post">
+        <input type="text" name="username">
+        <input type="text" name="password">
+        <input type="text" name="cpassword">
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>
