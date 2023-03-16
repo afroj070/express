@@ -33,10 +33,10 @@ check('password','password must be in 5 characters').isLength({min:5})
     response.render('index',{title:'user details',error:mapped()});
 });
 
-// app.get =('/about/:a-:b',(request,response)=>{
-//     response.render('about',{title:'about',sum:parseInt (request.params.a)+parseInt (request.params.b)
-//     ,Substraction:parseInt (request.params.a)-parseInt (request.params.b)
-//     ,mul:parseInt (request.params.a)-parseInt (request.params.b)})
-// });
+app.get =('/about/:a-:b',(request,response)=>{
+    response.render('about',{title:'about',sum:parseInt (request.params.a)+parseInt (request.params.b)
+    ,Substraction:parseInt (request.params.a)-parseInt (request.params.b)
+    ,mul:parseInt (request.params.a)-parseInt (request.params.b)})
+});
 
 app.listen(3000,()=>console.log("server running on port:3000"));
